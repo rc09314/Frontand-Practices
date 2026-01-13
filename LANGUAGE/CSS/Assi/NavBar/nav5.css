@@ -69,12 +69,12 @@
 }
 
 .hero h1{
-    /* color: rgb(238, 243, 240); */
+    
     color: transparent;
     -webkit-text-stroke:2px red;
     font-size: 60px;
     margin-bottom: 20px;
-    /* text-shadow: black 2PX 2PX; */
+    
 }
 
 

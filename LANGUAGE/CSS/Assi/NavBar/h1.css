@@ -23,7 +23,7 @@ body {
     position: relative;
 }
 
-/* ▼ Arrow added using ::after */
+
 .dropbtn::after {
     content: "";
     margin-left: 8px;

@@ -1,9 +1,6 @@
-/* =============================================
-   APJ Abdul Kalam Biography Card Stylesheet
-   Purpose: Style biographical card with modern design
-   ============================================= */
 
-/* Body - Main container styling */
+
+
 body {
     margin: 10px;
     padding: 10px;
@@ -13,7 +10,7 @@ body {
     min-height: 100vh;
 }
 
-/* Image - Profile picture with circular border */
+
 img {
     border: 3px solid #000;
     border-radius: 75px;
@@ -22,7 +19,7 @@ img {
     display: block;
 }
 
-/* Card - Main content container */
+
 .card {
     max-width: 700px;
     background: hsl(175, 84%, 75%);
@@ -33,7 +30,7 @@ img {
     margin: 20px auto;
 }
 
-/* Heading 1 - Main title (name) */
+
 h1 {
     text-align: right;
     font-size: 30px;
@@ -41,7 +38,7 @@ h1 {
     margin-bottom: 5px;
 }
 
-/* Year - Birth and death years */
+
 .year {
     text-align: right;
     font-size: 18px;
@@ -49,7 +46,7 @@ h1 {
     margin-bottom: 15px;
 }
 
-/* Heading 2 - Subtitle */
+
 h2 {
     font-size: 15px;
     margin-bottom: 10px;
@@ -57,7 +54,7 @@ h2 {
     font-weight: bold;
 }
 
-/* Info - Biography information text */
+
 .info {
     margin-bottom: 12px;
     line-height: 1.5;
@@ -65,13 +62,13 @@ h2 {
     color: #444;
 }
 
-/* Heading 3 - Section headings */
+
 h3 {
     margin-bottom: 10px;
     color: #333;
 }
 
-/* Paragraph - General text styling */
+
 p {
     margin-bottom: 12px;
     line-height: 1.5;

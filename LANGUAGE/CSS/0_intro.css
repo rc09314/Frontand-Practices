@@ -4,13 +4,13 @@ h3 {
 h2 {
   color: red;
   background-color: lightseagreen;
-  /* text -> center/right/left */
+  
   text-align: center;
 }
 p {
   text-align: justify;
   font-size: 18px;
-  /* font-weight: bold; */
-  /* font-style: italic; */
+  
+  
   font-family: cursive;
 }

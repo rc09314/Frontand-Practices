@@ -1,25 +1,22 @@
-/* =============================================
-   Flexbox Container Stylesheet
-   Purpose: Demonstrate flexbox layout properties
-   ============================================= */
 
-/* Main container - Using flexbox display */
+
+
 .maincontainer {
     height: 450px;
     width: 100%;
     border: 2px solid #333;
     background-color: rgb(230, 215, 215);
     
-    /* Flexbox properties */
+    
     display: flex;
-    flex-direction: row-reverse;  /* Reverse order of items */
-    justify-content: space-between;  /* Space distribution */
-    align-items: center;  /* Vertical centering */
+    flex-direction: row-reverse;  
+    justify-content: space-between;  
+    align-items: center;  
     
     color: aliceblue;
 }
 
-/* Flex items - Individual boxes */
+
 .box {
     height: 70px;
     width: 70px;
@@ -33,7 +30,7 @@
     transition: transform 0.3s ease;
 }
 
-/* Box hover effect */
+
 .box:hover {
     transform: scale(1.1);
 }
