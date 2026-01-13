@@ -1,0 +1,35 @@
+*{
+    margin:px 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+h1{
+ color: blue;
+ text-align: center;
+
+}
+.black span{
+    text-decoration: underline;
+    color: green;
+}
+.second{
+    color: red;
+}
+.last_h2{
+    color: blue;
+    text-align: end;
+    .black
+}
+.black{
+    color: blue;
+}
+p{
+    color: green;
+}
+h2{
+    color: blue;
+}
+.black u{
+    background-color: red;
+}

@@ -1,0 +1,106 @@
+.demo-box {
+    width: 150px;
+    height: 80px;
+    color: rgb(17, 4, 7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua ;
+    border-radius: 5px;
+    box-shadow: 0px 7px;
+    margin: 15px;
+    padding: 12px;
+    mar
+   
+    transition: .4s;
+}
+
+.container {
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ex1:hover {
+    transform: translateX(50px);
+}
+.ex2:hover {transform: translateX(-50px);
+
+}
+
+.ex3:hover {
+    transform: translateY(50px);
+}
+.ex4:hover {
+    transform: translateY(-50px);
+}
+
+.ex5:hover {
+    transform: translate(40px, 50px);
+}
+.ex6:hover { transform: translate(-40px,-50px);
+
+}
+.ex7 {
+    position: relative;
+    left: 30%;
+    top: 5px;
+    transform: translate(-40%,0);
+}
+.ex8:hover {
+transform: translate(-20px) scale(1.2);
+}
+.ex9:hover {
+    transform: translate(-20px) rotate(50deg);
+
+}
+.ex10:hover {
+    transform: translate(-20px);
+    box-shadow: 0 10px 25px ;
+}
+
+.ex11:hover {
+    transform: translateX(52px);
+}
+
+.ex13{
+    animation: move 2s infinite alternate;
+}
+@keyframes move {
+    from {transform: translate(0);}
+    to { transform: translate(80px);}
+}
+.ex14:hover {
+    animation: leftIn 1s forwards;
+}
+@keyframes leftIn {
+    from {
+        transform: translate(-100px);
+       
+    }
+    to {
+        transform: translate(0);opacity: 0;
+    }
+}
+
+.ex15 {
+    animation: bottomIn .9s forwards;
+}
+@keyframes bottomIn {
+    from{ transform: translate(60px);opacity: 0;}
+    to {transform: translate(0); opacity: 1;}
+}
+.ex16 span {
+  transform: translateY(20px);
+  opacity: 0;
+  transition: .4s;
+}
+.ex16:hover span {
+    transform: translate(0);
+    opacity: 1;
+}
+.ex17:hover {
+    transform: translate(-15px);
+}
+ .ex20:hover {
+    transform: translateY(-15px) scale(1.1);
+ }

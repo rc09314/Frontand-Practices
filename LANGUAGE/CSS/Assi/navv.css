@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  padding: 40px;
+  background: white;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+}
+
+.navbar {
+  height: 50px;
+  background: #24272b;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  margin-bottom: 60px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #d4d4d4;
+  font-size: 16px;
+}
+
+.logo {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.contact-btn {
+  background: #00a5c3;
+  padding: 8px 22px;
+  color: #fff;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  
+ 
+}
+

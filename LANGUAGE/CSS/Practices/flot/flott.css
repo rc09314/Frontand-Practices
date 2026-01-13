@@ -1,0 +1,18 @@
+img {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+  
+}
+
+.image1 {
+    float: left;
+}
+
+p {
+    float: left;
+  text-align: justify;
+}
+.image2 {
+    float: right;
+}

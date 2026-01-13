@@ -1,0 +1,25 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+ul{
+    list-style: none;
+    background-color: aqua;
+    border: 2px solid;
+    overflow: auto;
+   
+
+}
+a{
+    text-decoration: none;
+    background-color: rgb(234, 241, 239);
+}
+li{
+    float: left;
+   margin-left: 20px;
+}
+
+.contact {
+    float: right;
+
+}

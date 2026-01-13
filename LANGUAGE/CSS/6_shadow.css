@@ -1,0 +1,21 @@
+.shadowDiv {
+  height: 100px;
+  width: 60%;
+  background-color: lightseagreen;
+  /* right bottom shadow light/dark  shadow-color */
+  /* box-shadow: 5px 5px 10px black; */
+  /* box-shadow: 5px 5px 10px black inset; */
+  /* box-shadow: 5px 5px 10px black, 5px 5px 10px darkgreen inset; */
+  /* double shadow */
+  /* box-shadow: 5px 5px 10px black, 6px 6px 12px darkgreen; */
+  /* box-shadow: 0px 0px 10px 2px green, 0px 0px 10px 2px black inset; */
+  box-shadow: 0px 0px 10px 2px black;
+  border: solid 2px;
+}
+h2 {
+  text-shadow: 4px 4px 6px black;
+  text-align: center;
+  box-shadow: 2px 2px 2px black;
+  width: 40%;
+  border-radius: 20px;
+}

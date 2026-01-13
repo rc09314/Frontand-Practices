@@ -1,0 +1,14 @@
+.box {
+  height: 100px;
+  width: 150px;
+  border: 2px solid;
+  border-radius: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  float: left;
+}
+.box2 {
+  float: right;
+  margin-right: 30px;
+}

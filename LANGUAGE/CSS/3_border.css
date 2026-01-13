@@ -1,0 +1,36 @@
+.myDiv {
+  width: 70%;
+  /* height: 400px; */
+  border-style: groove;
+  /* border-top-style: solid;
+  border-bottom-style: double;
+  border-right-style: dotted;
+  border-left-style: dashed; */
+  /* border-style: solid dashed none dotted; */
+  /* border-style: solid double; */
+  /* border-color: red green blue darkmagenta; */
+  border-color: lightseagreen;
+  /* border-width: 15px; */
+  border-radius: 20px;
+}
+.circleCont {
+  height: 150px;
+  width: 150px;
+  background-color: lightsalmon;
+  border: solid 2px red;
+  /* border: solid 2px; */
+  border-radius: 50%;
+}
+/* 
+border-style: solid, dashed,dotted,double,groove,ridge,none,...
+if you want to add 4 properties
+top right bottom left - clock wise,
+and if you want to add 2 values, it will take
+first value -> top & bottom
+second value -> left & right
+
+container/image -> circle
+height is equals to width
+border-radius: 50%;
+
+*/

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="product.decreaseQty()">-</button>
+<span id="qty">1</span>
+<button onclick="product.increaseQty()">+</button>
+
+<script>
+let product = {
+  price: 799,
+  quantity: 1,
+
+  increaseQty() {
+    this.quantity++;
+    document.getElementById("qty").innerText = this.quantity;
+  },
+
+  decreaseQty() {
+    if (this.quantity > 1) {
+      this.quantity--;
+      document.getElementById("qty").innerText = this.quantity;
+    }
+  }
+};
+</script>
+</body>
+</html>

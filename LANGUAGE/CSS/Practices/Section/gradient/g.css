@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ background: black;
+  font-family: Arial;
+}
+
+.scene {
+  perspective: 1000px;
+}
+
+.card {
+  width: 450px;
+  height: 260px;
+background: linear-gradient(135deg, #ff7a18, #ff1f3d);
+  color: white;
+  border-radius: 35px;
+  padding: 30px;
+  transform-style: preserve-3d;
+  transition: transform 0.8s ease, box-shadow 0.5s ease;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.card h3,
+.card .sub,
+.card .text {
+  opacity: 0;
+  transform: translateY(25px);
+
+}
+
+.scene:hover .card {
+  transform: rotateY(12deg) rotateX(12deg) scale(1.08);
+  box-shadow: 0 35px 80px rgba(185, 15, 15, 0.4);
+}
+.scene:hover .card h3,
+
+.scene:hover .card .text {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card h3 {
+  margin: 0 0 10px;
+  font-size: 24px;
+}
+
+.sub {
+  font-size: 14px;
+  margin: 0;
+  opacity: 0.7;
+}
+
+.text {
+  margin-top: 20px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+

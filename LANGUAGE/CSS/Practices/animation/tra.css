@@ -1,0 +1,72 @@
+
+body {
+    height: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.box1 {
+    height: 40px;
+    width: 40px;
+   background-color: rgb(14, 4, 4);
+   animation: slide1 2s;
+   border-radius: 50px;
+   animation-delay: 2s;
+
+    
+}
+.box3  {
+    height: 40px;
+    width: 40px;
+   background-color: black;
+   animation: slide2 4s;
+   border-radius: 50px;
+   animation-delay: 3s;
+
+    
+}
+.box2 {
+    height: 40px;
+    width: 40px;
+    background-color: rgb(12, 12, 11);
+   animation: slide3 4s;
+   border-radius: 50px;
+   animation-delay: 5s;
+
+    
+}
+
+
+ @keyframes slide1 {
+    0% {
+       left: 0; top: px;
+        background-color: rgb(221, 18, 18);
+    }
+    100% {
+        left: 0; top: 10px;
+    }
+      
+ }
+ @keyframes slide2 {
+    0% {
+       left: 0; top: px;
+        background-color: rgb(221, 201, 18);
+    }
+    100% {
+        left: 0; top: 10px;
+    }
+      
+ }
+ @keyframes slide3 {
+    0% {
+       left: 0; top: px;
+        background-color: rgb(91, 253, 16);
+    }
+    100% {
+        left: 0; top: 10px;
+    }
+      
+ }
+
+

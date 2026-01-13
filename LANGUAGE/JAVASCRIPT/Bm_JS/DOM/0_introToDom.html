@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      button {
+        background-color: #04aa6d;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      img {
+        height: 200px;
+        width: 250px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Introduction to DOM</h2>
+    <h3 id="heading">Card Heading</h3>
+    <p class="para">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem accusamus
+      quas numquam! Excepturi illum accusantium reprehenderit? Dolor excepturi
+      molestias accusamus eius, ratione quam esse eligendi beatae atque
+      inventore ipsam reiciendis!
+    </p>
+    <p class="para">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos quaerat
+      molestias necessitatibus nesciunt veritatis, nobis eum tempora est
+      praesentium assumenda temporibus reiciendis corporis beatae culpa
+      provident nulla! Atque, recusandae quae!
+    </p>
+    <p class="para1">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus quidem
+      nesciunt doloribus velit quaerat nobis dolor. Cupiditate, impedit, velit
+      quam doloremque, aliquam amet natus dolores dolorem pariatur quibusdam
+      nostrum molestiae.
+    </p>
+    <img
+      class="image"
+      src="https://images.pexels.com/photos/302743/pexels-photo-302743.jpeg"
+      alt=""
+    />
+    <br />
+    <button>Click Here</button>
+    <button>Click Here</button>
+
+    <script>
+      // id selector
+      let elm = document.getElementById("heading");
+      console.log(elm);
+      elm.innerText = "This is the updated heading using DOM";
+
+      // class selector
+      let para = document.getElementsByClassName("para");
+      console.log(para);
+      //   para[0].innerText = "The new content 0";
+      //   para[1].innerText = "The new content 1";
+
+      //   update same content in paragraph
+      for (let i = 0; i < para.length; i++) {
+        para[i].innerHTML = "<h3>The new content</h3>";
+      }
+
+      // element selector
+      let btn = document.getElementsByTagName("button");
+      console.log(btn);
+      btn[0].innerText = "Click Me";
+
+      // querySelector: .class,#id
+      let image = document.querySelector(".image");
+      console.log(image);
+      image.src =
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR132TBAD0-GhGhN8_2Xr-3obkFd4NzFbk6Hg&s";
+    </script>
+  </body>
+</html>
+<!-- 
+change text of an paragraph
+change image 
+target all li elements "li"
+-->

@@ -1,0 +1,57 @@
+
+body{
+  background:#e7dbdb;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-family:sans-serif;
+}
+
+.card{
+  width:260px;
+  height:180px;
+  perspective:700px;
+  
+}
+
+.inner{
+  width:100%;
+  height:100%;
+  border-radius:18px;
+  /* position:relative; */
+  transform-style:preserve-3d;
+  transition:.6s ease;
+}
+
+.card:hover .inner{
+  transform:rotateY(180deg) scale(1.06);
+}
+
+.front, .back{
+  width:100%;
+  height:100%;
+  border-radius:18px;
+  position:absolute;
+  backface-visibility:hidden;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-weight:700;
+  color:white;
+}
+
+.front{
+  background:linear-gradient(135deg,#00c6ff);
+}
+
+.back{
+  background:linear-gradient(135deg,#ff7a18);
+  transform:rotateY(180deg); /* flip karne ke liye use karte */
+  opacity:0;
+  transition:.5s ease;
+}
+
+.card:hover .back{
+  opacity:1;
+}
