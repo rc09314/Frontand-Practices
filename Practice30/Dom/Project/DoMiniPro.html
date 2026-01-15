@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom_Mini_Project</title>
+
+      <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            padding: 20px;
+            transition: 0.3s;
+        }
+
+        .dark {
+            background-color: #222;
+            color: white;
+        }
+      </style>
+</head>
+<body>
+     <h1 id="title">WELCOME</h1>
+      <button onclick="changeTitle()">Change Title</button>
+
+       <hr>
+      
+        <img id="profileImg" src="https://images.unsplash.com/photo-1768084368558-0c4f68278309?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="200px" alt="">
+
+        <p id="username">Guest</p>
+        <button onclick="changeProfile()">Change</button>
+        <hr>
+        <input type="text" id="itemInput" placeholder="Enter item">
+        <button onclick="addItem()">Add Item</button>
+
+        <ul id="itemList"></ul>
+        <hr>
+        <button onclick="toggleTheme()">toggle</button>
+
+    
+
+         <script>
+            function changeTitle() {
+                document.getElementById("title").innerText = "Welcome To Dog ";
+            }
+
+            // image change  + name 
+            
+             function changeProfile() {
+                document.getElementById("profileImg").src = "https://images.unsplash.com/photo-1768310481123-9c8e4e6fc61a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+                document.getElementById("username").innerText = "Rahul";
+             }
+           
+              //Add Items 
+              function addItem() {
+                const input = document.getElementById("itemInput");
+                if (input.value === "") return;
+
+                const li = document.createElement("li");
+                li.innerText = input.value;
+
+                li.onclick = function () {
+                    this.remove();
+
+                };
+                document.getElementById("itemList").appendChild(li);
+                input.value = "";
+              }
+              //
+              function toggleTheme() {
+               document.body.classList.toggle("dark");
+              }
+             
+         </script>
+</body>
+</html>
