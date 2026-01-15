@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <button id="countButton">click me </button>
+     <p id="count">0</p>
+
+     <script>
+        let  count = 0;
+
+            
+        document.getElementById("countButton")
+        .addEventListener("click", function() {
+            count++;
+            // console.log(count);
+
+            document.getElementById("count").innerText =count;
+
+           
+            if (count >= 10) {
+                document.getElementById("countButton").disabled = false;
+            } else {
+                console.log(count);
+            }
+
+
+        } );
+ 
+     </script>
+</body>
+</html>

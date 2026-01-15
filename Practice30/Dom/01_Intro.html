@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     
+<link rel="stylesheet" href="01_intro.css">
+</head>
+<body>
+    <h1 id="mainHeading">Introduction to Dom</h1>
+    <h2 id="subHeading">This is the uodate heading using Dom</h2>
+     <button onclick="changeText()">Click Here</button>
+    <p id="content">My Black Panther</p>
+  
+    <img  id="myImage" src="https://plus.unsplash.com/premium_photo-1723428295291-d2abb18bc76c?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="200px"><br>
+        <button onclick="changeImg()">Change Img</button>
+    <br><br>
+     <h4>Add Text</h4>
+    <button onclick="addContent()">Add Text </button>
+    
+
+    <script>
+        function changeText () {
+            document.getElementById("subHeading").innerText = "Change This";
+        }
+
+        function addContent() {
+            const para = document.createElement("p");
+            para.innerText = "The new content"
+            document.body.appendChild(para);
+            
+        }
+
+        // change img
+        function changeImg () {
+            document.getElementById ("myImage").src = "https://images.unsplash.com/photo-1743105351262-3f9e6944920a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        }
+    </script>
+</body>
+</html>
