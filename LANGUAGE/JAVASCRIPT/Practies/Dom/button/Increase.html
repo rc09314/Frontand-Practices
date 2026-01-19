@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #count {
+            font-size: 40px;
+            margin-bottom: 15px;
+            color: #ff5722;
+        }
+         button {
+              padding: 12px 30px;
+              font-size: large;
+              background-color: #0d6efd;
+              border: none;
+              border-radius: 12px;
+              color: white;
+              cursor: pointer;
+         }
+
+    </style>
+</head>
+<body>
+    <div id="count">0</div>
+    <button onclick="increase()">Count</button>
+
+    <script>
+        let number = 0;
+         function increase () {
+            number ++;
+            document.getElementById("count").innerText = number;
+         }
+    </script>
+</body>
+</html>
