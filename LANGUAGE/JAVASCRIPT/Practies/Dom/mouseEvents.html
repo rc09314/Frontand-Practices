@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         button {
+        padding:15px ;
+         margin: 20px 50px;
+         border-radius: 10px;
+         }
+    </style>
+</head>
+<body>
+
+     <button id="myBtn">Click Me</button>
+
+<script>
+  const btn = document.getElementById('myBtn');
+
+  // click event
+  btn.addEventListener('click', () => {
+    alert('Button clicked!');
+  });
+
+  // mouseenter event
+  btn.addEventListener('mouseenter', () => {
+    btn.style.backgroundColor = 'yellow';
+  });
+
+  // mouseleave event
+  btn.addEventListener('mouseleave', () => {
+    btn.style.backgroundColor = '';
+  });
+</script>
+
+</body>
+</html>
+<!--
+What events are action triggerd by the user interactring with the mousr  (clicking hovering moving)
+
+common Mouse Events 
+click fires whe nthe user clicks on clicks on an element
+dbclick fires when the usser douvle clicks on element
+\
+
+-->

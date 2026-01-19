@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+
+         }
+         p {
+            font-size: 20px;
+            margin-bottom:15px;
+        
+
+         }
+         button {
+            padding: 10px 25px;
+            font-size: 16px;
+            color: rgb(242, 235, 235);
+            border-radius: 6px;
+            cursor: pointer;
+            
+         }
+         button:hover {
+            background-color: #084298;
+         }
+    </style>
+</head>
+<body>
+      <p id="para">This i original text</p>
+
+      <button onclick="changeText()">Change Text</button>
+
+      <script>
+        function changeText () {
+            document.getElementById ("para").innerText = "Text Change successfully"
+        }
+      </script>
+</body>
+</html>
