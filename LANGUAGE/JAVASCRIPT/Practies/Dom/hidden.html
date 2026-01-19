@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Show Hidden Paragraph</title>
+
+    <style>
+        body {
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+
+        #hiddenPara {
+            display: none;        /* hidden initially */
+            margin-top: 15px;
+            font-size: 18px;
+            color: green;
+        }
+
+        button {
+            padding: 10px 25px;
+            font-size: 16px;
+            background-color: purple;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<button onclick="showPara()">Show Paragraph</button>
+
+<p id="hiddenPara">This is a hidden paragraph</p>
+
+<script>
+    function showPara() {
+        document.getElementById("hiddenPara").style.display = "block";
+    }
+</script>
+
+</body>
+</html>
