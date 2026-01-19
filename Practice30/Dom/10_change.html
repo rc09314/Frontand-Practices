@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     
+
+     <h1>Text change</h1>
+     <h1 id="title">Hello</h1>
+     <button onclick="changeText()">change</button>
+     <hr>
+    <h1>Image change </h1>
+
+     <img id="img" src="img1.jpg" alt="" width="200px">
+     <button  onclick="changeImg()">Change Img</button>
+
+    <h2>Element add Karna </h2>
+
+     <ul id="list"></ul>
+     <button onclick="addItem()">Add Item</button>
+
+
+     <script>
+        function changeText ()  {
+            document.getElementById ("title").innerText = "Hello Rahul";
+        }
+
+        // style change karna 
+        document.getElementById("title").style.color = "red";
+        document.getElementById ("title").style.fontSize = "40px";
+        
+        // image change 
+         function changeImg () {
+             Document.getElementById("img").src = "img2.jpc";
+         }
+        // add item
+
+        function addItem () {
+            let li = document.createElement("li");
+            li.innerText = "New Item";
+            document.getElementById("list").appendChild(li);
+        }
+         
+
+     </script>
+</body>
+</html>

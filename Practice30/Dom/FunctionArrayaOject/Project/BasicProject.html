@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {font-family: Arial, Helvetica, sans-serif;
+            background: #f4f6f8;
+            padding: 20px;
+        
+        }
+     h1
+      {
+        color: #333;
+        background-color: aquamarine;
+        color: rgb(47, 43, 232)
+     }
+     .box {
+        background: #fffffd;~
+        padding: 15px;
+        margin: 10px 0;
+        border-radius: 8px;
+
+     }
+     input {
+        padding: 8px;
+        margin: 5px 0;
+        width: 200px;
+
+     }
+
+     button {
+        padding: 8px 12px;
+        background: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+     }
+     ul {
+        list-style: none;
+        padding: 0;
+
+     }
+        li {
+            padding: 6px 0;
+        }
+        
+    </style>
+</head>
+<body>
+      <h1>Student Result </h1>
+
+      <!---yah Input section hai-->
+      <div class="box">
+        <input type="text " id="name" placeholder="Enter Name">
+        <input type="text" id="marks" placeholder="Enter Marks">
+        <button onclick="addStudent()">Add Student</button>
+      </div>  
+
+    <!--Output-->
+    <div class="box">
+        <h3>Student List </h3>
+        <ul id="list"></ul>
+    </div>
+  
+
+     <script>
+        let students = [];
+
+function getResult(marks) {
+  if (marks >= 60) {
+    return "Pass";
+  } else {
+    return "Fail";
+  }
+}
+
+function addStudent() {
+  let name = document.getElementById("name").value;
+  let marks = Number(document.getElementById("marks").value);
+
+  let student = {
+    name: name,
+    marks: marks,
+    result: getResult(marks)
+  };
+
+  students.push(student);
+  displayStudents();
+}
+
+function displayStudents() {
+  let list = document.getElementById("list");
+  list.innerHTML = "";
+
+  for (let i = 0; i < students.length; i++) {
+    list.innerHTML += `
+      <li>
+        ${students[i].name} - ${students[i].marks} - ${students[i].result}
+      </li>
+    `;
+  }
+}
+        
+
+
+        
+     </script>
+</body>
+</html>

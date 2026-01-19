@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            background: rgb(138, 232, 84);
+            color: red;
+            text-align: center;
+
+        }
+        p{
+            color: rgb(24, 28, 28);
+            background: pink;
+        }
+        h2 {
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+     <h1>Welcome To My Website</h1>
+
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam voluptas itaque dicta aliquam non quidem ipsam adipisci dolor nihil quaerat nostrum quia harum, ea voluptate sed asperiores ipsa corrupti sequi.</p>
+
+      <h2>Thanks For Visiting Our Website</h2>
+
+      <hr>
+
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Price</li>
+        <li>Contact</li>
+      </ul>
+
+      <hr>
+
+      <table>
+        
+            <tr>
+            <th>Name</th>
+            <th>Age</th>
+            </tr>
+            <tr>
+                <td>Alice</td>
+                <td>204</td>
+            </tr>
+              <tr>
+                <td>Bob</td>
+                <td>25</td>
+              </tr>
+      
+      </table>
+      <hr>
+      <p id="helloText">Hello</p>
+
+      <button onclick="changeText()">Click</button>
+
+      <script>
+        function changeText() {
+            document.getElementById("helloText").innerText = "Hello JavaScript";
+        }
+      </script>
+</body>
+</html>
