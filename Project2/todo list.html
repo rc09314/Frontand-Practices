@@ -1,0 +1,29 @@
+<input type="text" placeholder="Enter task">
+<button id="button">Add</button>
+
+<script>
+let btn = document.getElementById('button');
+
+btn.addEventListener('click', function () {
+    let input = document.querySelector('input');
+    let task = input.value;
+
+    if(task === '') return; // empty task allow na ho
+
+    let li = document.createElement('li');
+    li.textContent = task + " ";
+
+    // Delete button
+    let delBtn = document.createElement('button');
+    delBtn.textContent = '❌';
+
+    delBtn.addEventListener('click', function () {
+        li.remove();   // task delete
+    });
+
+    li.appendChild(delBtn);
+    document.body.appendChild(li);
+
+    input.value = '';
+});
+</script>

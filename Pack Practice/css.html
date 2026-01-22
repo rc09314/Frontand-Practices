@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+         /* globle Styles*/
+         body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 5;
+
+         }
+         /* the card container ( Box model Practice)*/
+         .card {
+             background-color: white;
+             width: 300px;
+             padding: 20px;
+             border-radius: 10px;
+             box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+             border-top: 5px solid #007bff;
+         }
+
+         /* The Styling */
+
+         .card h2 {
+            color: #2a2020;
+           margin-top: 0;
+
+         }
+
+         .card p {
+            color: #554f55;
+         }
+
+         /* button Interaction */
+         .btn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            width: 100%;
+         }
+
+          .btn:hover {
+            background-color: #b3b000;
+          }
+    </style>
+</head>
+<body>
+    
+
+    <div class="card">
+        <h2>Css Practice</h2>
+        <p>This Card use the <strong>Box Model</strong> for spacing and <strong>Flexbox</strong> to center itself on the screen</p>
+
+        <button class="btn">Get Started</button>
+
+    </div>
+</body>
+</html>
+<!--
+1. Core Diffination 
+
+. Css: A stylesheet language used to describe the presenation of a documentwritren in html
+
+. Selectors ;  The part if css that points to the HTML elements you want to styling ( h2 class-name j )
+. Prooerty;--- The aspect you want to change ( color , fint , size, margin)
+.value.. The settting you  to the  property ( e.g. red, 20px, auto )
+
+.DECLARATION: 
+A SINGLE lines of css containing a property and value ( color blue )
+
+
+2.. Essential Css Topics 
+
+A. The Box Modle 
+.. Every elements in Css a rectangle box Understanding how these layers add up is the most inportant part of css
+
+1.. the text or image iside 
+2. Padding Clear space inside the border 9 between cintant and border 
+3. border ,, A line around the paddiing anf contant
+4. Margin; clear space outside the border the border Between this elements and others;
+
+B.. Selectors
+
+. Elements Selectors:p { .....} (styles all <p> tags )
+    . Classs Selectors : btn { Style all elements with id- header}
+    . Id selectors #header { ...} (Style the one elements with id= header)
+    . hover state :a :hover { ...} Style the a link only when mouse is over 4it
+
+    C.. layout ( the Big Two )
+
+    1.. Flexbox :: Best fo =r aligining iten=mw in a singke row or coloum it makes flexible layouts easy 
+    2.. CSS Gride.. Best for complex 2D layout (row and colums together )
+
+    D. Units 
+    . px (Pixels ) Absolute size ( 16px)
+    .em/rem: Reletive to the screen size (markes website "Responshiv ")
+.
+-->
