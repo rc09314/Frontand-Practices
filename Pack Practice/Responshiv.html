@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+     * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+     }
+       
+      body {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+        background: #333;
+        color: white;
+      }
+
+      .navbar nav a {
+        color: white;
+       margin-left: 15px;
+       text-decoration: none;
+
+      }
+      .hero {
+        padding: 40px;
+        text-align: center;
+      }
+      .services {
+        display: flex;
+        gap: 20px;
+      }
+      .card {
+        flex: 1;
+        padding: 30px;
+        background: lightblue;
+        text-align: center;    
+    
+    }
+
+    @media (max-width:600px) { .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+        
+    .services {
+        flex-direction: column;
+    }
+    }
+
+    </style>
+</head>
+<body>
+     <header class="navbar">
+        <h1>MySite</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Service</a>
+            <a href="#">Contant</a>
+        </nav>
+         
+     </header>
+
+     <section class="hero">
+        <h2>Build Responshiv Websites</h2>
+        <p>Learn frontand development step by step</p>
+
+     </section>
+
+     <section>
+        <div class="service">
+     <div class="card">Html</div>
+        <div class="card">Css</div>
+        <div class="card">JavaScriot</div>
+      
+     </section>
+</body>
+</html>
