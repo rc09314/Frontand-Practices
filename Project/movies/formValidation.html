@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+    }
+
+    .card {
+      width: 320px;
+      margin: 100px auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 6px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      box-sizing: border-box;
+    }
+
+    .error {
+      color: red;
+      font-size: 13px;
+      margin-top: 4px;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 15px;
+      background: #28a745;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h2>Login</h2>
+
+    <form onsubmit="return validateForm()">
+      <input type="text" placeholder="Enter name">
+
+      <input type="email" id="email" placeholder="Enter email">
+      <div id="emailError" class="error"></div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <script>
+    function validateForm() {
+      const email = document.getElementById("email").value;
+      const emailError = document.getElementById("emailError");
+
+      if (email === "") {
+        emailError.textContent = "Email is required";
+        return false; // form submit stop
+      }
+
+      emailError.textContent = "";
+      alert("Form submitted successfully!");
+      return true;
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Form</title>
+  </head>
+  <body>
+    <h2>Register Form</h2>
+
+    <form action="">
+      <input
+        type="userN"
+        placeholder="Enter Username"
+        onclick="focusInput(this)"
+        onblur="blurInput(this)"
+      />
+      <br /><br />
+
+      <input
+        type="password"
+        id="password"
+        placeholder="Enter Password"
+        onkeyup="checkPassword()"
+      />
+      <p id="passwordMsg"></p>
+
+      <select onchange="SelectCity(this)">
+        <option value="">Select City</option>
+        <option value="Noida">Delhi</option>
+      </select>
+
+      <p id="cityMsg"></p>
+
+      <button onclick="register()">Register</button>
+
+      <p id="successMsg"></p>
+    </form>
+
+    <script>
+      function focusInput(input) {
+        input.style.backgroundColor = "red";
+      }
+      function blurInput(input) {
+        input.style.backgroundColor = "white";
+      }
+
+      function checkPassword() {
+        let pass = document.getElementById("password").value;
+        let msg = document.getElementById("passwordMsg");
+
+        if (pass.length > 3) {
+          msg.innerText = "Strong Password";
+        } else {
+          msg.innerText = "Weak Password";
+        }
+      }
+
+      function register() {
+        alert("Registration Successful!");
+        document.getElementById("successMsg").innerText =
+          "Registration Successful!";
+      }
+    </script>
+  </body>
+</html>

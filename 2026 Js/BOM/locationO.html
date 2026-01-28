@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+         /* body {
+            font-family: 'Courier New', Courier, monospace;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+             
+         } */
+
+         .btn-box {
+            background-color: #667eea;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+         }
+
+         button {
+            padding: 10px 16px;
+            font-size: 15px;
+            border-radius: 8px;
+            border: none;
+            transition: all 0.3s ease;
+            color: #ffffff;
+            cursor: pointer;
+         }
+
+         button:nth-child(1){
+
+            background: #4CAF50;
+         }
+         button:nth-child(2) {
+            background: #ff9800;
+
+         }
+         button:nth-child(3) {
+            background: #2196f3;
+         }
+
+         button:hover {
+            transform: translateY(-3px);
+            box-shadow:  0 10px 20px rgba(0,0,0,0.25);
+            opacity: 0.9;
+         }
+         button:active {
+            transform: scale(0.96);
+         }
+         /* @media (max-width: 40px) {
+            button {
+                width: 100%;
+            }
+         } */
+    </style>
+</head>
+<body>
+     <!--Location Object
+     .current Url
+     .Redirect page
+     .Reload Page
+     
+     -->
+     <h1>Location Object </h1>
+     
+<div class="btn-box">
+     <button onclick="getURL()">Show URL</button>
+     <button onclick="reloadPage()">reaload</button>
+     <button onclick="youtube()">Go Youtube</button>
+  </div>
+
+     <script>
+        function getURL () {
+            alert(location.href);
+
+        }
+
+        function youtube() {
+            location.href = "https://youtu.be/025GNiHAC98?si=2Ml-vPD-zklctEor"
+        }
+     </script>
+</body>
+</html>

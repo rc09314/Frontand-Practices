@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Biodata – Rahul Chauhan</title>
+
+<style>
+body{
+  background:#f2f2f2;
+  font-family:Arial, sans-serif;
+}
+
+/* BUTTON */
+.btn{
+  padding:10px 22px;
+  font-size:16px;
+  cursor:pointer;
+  background:#333;
+  color:#fff;
+  border:none;
+  border-radius:6px;
+}
+
+/* A4 SIZE */
+.biodata{
+  width:794px;
+  min-height:1123px;
+  margin:20px auto;
+  display:flex;
+  background:#fff;
+  box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+
+/* LEFT PANEL */
+.left{
+  width:35%;
+  background:#cfe3df;
+  padding:25px;
+  box-sizing:border-box;
+}
+
+.photo{
+  text-align:center;
+  margin-bottom:15px;
+}
+
+.photo img{
+  width:180px;
+  height:220px;
+  object-fit:cover;
+  border-radius:15px;
+  border:3px solid #333;
+}
+
+.left h2{
+  text-align:center;
+  margin-bottom:20px;
+}
+
+.left h3{
+  margin-top:20px;
+  border-bottom:2px solid #333;
+  padding-bottom:5px;
+}
+
+.left p{
+  margin:6px 0;
+  font-size:14px;
+}
+
+/* RIGHT PANEL */
+.right{
+  width:65%;
+  padding:30px;
+  box-sizing:border-box;
+}
+
+.section{
+  margin-bottom:25px;
+}
+
+.section h3{
+  border-bottom:2px solid #333;
+  padding-bottom:5px;
+  margin-bottom:10px;
+}
+
+.section ul{
+  margin-left:20px;
+  line-height:1.8;
+  font-size:15px;
+}
+
+.section ul li{
+  margin-bottom:8px;
+}
+
+/* PRINT – KEEP COLORS */
+@media print{
+  body{
+    background:#fff;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  *{
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .btn{
+    display:none;
+  }
+
+  .biodata{
+    margin:0;
+    box-shadow:none;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- PRINT / PDF BUTTON -->
+<div style="text-align:center; margin:15px;">
+  <button class="btn" onclick="window.print()">📄 Print / Download PDF</button>
+</div>
+
+<div class="biodata">
+
+  <!-- LEFT -->
+  <div class="left">
+    <div class="photo">
+      <img src="ttt.jpeg" alt="Photo">
+    </div>
+
+    <h2>Rahul Chauhan</h2><br>
+
+   <h3>Personal Info</h3>
+<ul style="line-height: 1.8;">
+  <li><b>Name:</b> Rahul Chauhan</li>
+  <li><b>Date of Birth:</b> 10-01-2002</li>
+  <li><b>Gender:</b> Male</li>
+  <li><b>Religion:</b> Hindu</li>
+  <li><b>Height:</b> 5 ft 3 in</li>
+</ul>
+
+<br><br>
+
+<h3>Address</h3>
+<ul style="line-height: 1.8;">
+  <li><b>Village:</b> Sanehuwa</li>
+  <li><b>Post:</b> Salamatpur</li>
+  <li><b>District:</b> Ghazipur</li>
+  <li><b>Pin Code:</b> 275201</li>
+</ul>
+
+<br><br>
+
+<h3>Contact</h3>
+<ul style="line-height: 1.8;">
+  <li><b>Phone:</b> 8429576042</li>
+  <li><b>Email:</b> rc093140@gmail.com</li>
+  
+</ul>
+
+  </div>
+
+  <!-- RIGHT -->
+  <div class="right">
+ <br><br><br><br><br><br>
+    <div class="section">
+      <h3>Family Details</h3>
+      <ul>
+        <li><b>Father:</b> Mr. Surendra Chauhan</li>
+        <li><b>Mother:</b> Mrs. Lalmati Devi</li>
+        <li><b>Brother:</b> 1 (Married)</li>
+        <li><b>Sisters:</b> 2 (Married)</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h3>Education</h3>
+      <ul>
+        <li>Class 10 – 2018</li>
+        <li>Class 12 – 2020</li>
+        <li>BSc Computer Science – 2023</li>
+        <li>ITI COPA – 2024</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h3>Current Studying</h3>
+      <ul>
+        <li><b>Institute:</b> Ducat IT Training School</li>
+        <li><b>Location:</b> Noida</li>
+        <li><b>Year:</b> 2025</li>
+        <li><b>Course:</b> Software / IT Training</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h3>Hobbies</h3>
+      <ul>
+        <li>Reading</li>
+        <li>Coding</li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>

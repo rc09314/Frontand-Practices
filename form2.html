@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register Form</title>
+
+    <style>
+        input, select {
+            padding: 8px;
+            width: 200px;
+        }
+        #msg {
+            font-size: 14px;
+        }
+    </style>
+
+</head>
+<body>
+
+<h2>Register Form</h2>
+
+<form onsubmit="return register()">
+
+    <input type="text"
+           id="username"
+           placeholder="Enter Username"
+           onfocus="focusInput(this)"
+           onblur="blurInput(this)">
+    <br><br>
+
+ 
+    <input type="password"
+           id="password"
+           placeholder="Password"
+           onkeyup="checkPassword()"
+           onfocus="focusInput(this)"
+           onblur="blurInput(this)">
+    <p id="msg"></p>
+
+ 
+    <select id="city"
+            onfocus="focusInput(this)"
+            onblur="blurInput(this)">
+        <option value="">Select City</option>
+        <option value="Noida">Noida</option>
+        <option value="Delhi">Delhi</option>
+    </select>
+
+    <br><br>
+    <button type="submit">Register</button>
+
+</form>
+
+<script>
+   
+    function focusInput(element) {
+        element.style.backgroundColor = "#e0f7fa";
+    }
+
+  
+    function blurInput(element) {
+        element.style.backgroundColor = "white";
+    }
+
+    
+    function checkPassword() {
+        let pass = document.getElementById("password").value;
+        let msg = document.getElementById("msg");
+
+        if (pass.length >= 6) {
+            msg.innerText = "Strong Password";
+            msg.style.color = "green";
+        } else {
+            msg.innerText = "Weak Password";
+            msg.style.color = "red";
+        }
+    }
+
+    // form validation
+    function register() {
+        let username = document.getElementById("username").value;
+        let password = document.getElementById("password").value;
+        let city = document.getElementById("city").value;
+
+        if (username === "") {
+            alert("Username is required!");
+            return false;
+        }
+
+        if (password.length < 6) {
+            alert("Password must be at least 6 characters!");
+            return false;
+        }
+
+        if (city === "") {
+            alert("Please select a city!");
+            return false;
+        }
+
+        alert("Registration Successful ✅");
+        return true;
+    }
+
+    
+</script>
+
+</body>
+</html>
