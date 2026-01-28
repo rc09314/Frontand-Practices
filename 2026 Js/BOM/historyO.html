@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --primary:#4f46e5;
+            --primary-hover: #4338ca;
+            --text: #ffffff;
+            --redius: 10px;
+            --shadow: 0 6px 15px rgb(0,0,0,0.15);
+        }
+
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background: var(--bg);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        button {
+            padding: 12px 26px;
+            font-weight: 600;
+            color: var(--text);
+            background: var(--primary);
+            border: none;
+            border-radius: var(--radius);
+            cursor: pointer;
+            box-shadow: var(--shadow);
+             transition: all 0.3s ease;
+
+
+        }
+
+        button:hover {
+            background: var(--primary-hover);
+            transform: translateY(-3px);
+        }
+
+        button:active {
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+<body>
+          <button onclick="goBack()">_Back</button>
+          <button onclick="goforward()">_Forward</button>
+
+          <script>
+            function goBack () {
+                history.back();
+
+            }
+              function goforward(){
+                history.forward();
+              }
+
+          </script>
+</body>
+</html>
