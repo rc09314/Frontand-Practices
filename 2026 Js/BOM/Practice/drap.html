@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Drag A</h1>
+    <h2>Drop</h2>
+    <div class="froptg" ondrag="drop(event)" ondragover="allowDrop(event)">
+        <p ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">Drag me</p>
+    </div>
+     <p id="demo"></p>
+
+     <script>
+    function dragStart(event) {
+        event.dataTransfer.setData ("text", event.target)
+    }
+     </script>
+</body>
+</html>

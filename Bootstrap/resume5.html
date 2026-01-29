@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Resume</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#f2f2f2;
+    padding:20px;
+}
+
+.resume{
+    max-width:900px;
+    margin:auto;
+    background:#fff;
+    padding:30px;
+}
+
+/* BUTTONS */
+.actions{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.actions button{
+    padding:10px 20px;
+    font-size:16px;
+    cursor:pointer;
+    margin:5px;
+    border:none;
+    background:#000;
+    color:#fff;
+}
+
+/* HEADER */
+.header{
+    text-align:center;
+    border-bottom:2px solid #000;
+    padding-bottom:10px;
+}
+
+.section{
+    margin-top:25px;
+}
+
+.section h2{
+    border-bottom:1px solid #000;
+    padding-bottom:5px;
+}
+
+/* PRINT SETTINGS */
+@media print{
+    body{
+        background:#fff;
+        padding:0;
+    }
+    .actions{
+        display:none; /* hide buttons */
+    }
+    .resume{
+        box-shadow:none;
+        margin:0;
+        width:100%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- PRINT & DOWNLOAD -->
+<div class="actions">
+    <button onclick="window.print()">🖨️ Print / Download PDF</button>
+</div>
+
+<div class="resume">
+
+    <div class="header">
+        <h1>YOUR NAME</h1>
+        <p>City | Email | Phone</p>
+        <p>LinkedIn | GitHub | Portfolio</p>
+    </div>
+
+    <div class="section">
+        <h2>Professional Summary</h2>
+        <p>Your summary here...</p>
+    </div>
+
+    <div class="section">
+        <h2>Skills</h2>
+        <p>Java, React, Spring Boot, HTML, CSS</p>
+    </div>
+
+    <div class="section">
+        <h2>Projects</h2>
+        <p><b>Project Name</b> – Description here</p>
+    </div>
+
+    <div class="section">
+        <h2>Education</h2>
+        <p>B.Tech – Computer Science</p>
+    </div>
+
+</div>
+
+</body>
+</html>

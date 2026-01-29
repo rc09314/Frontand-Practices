@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <h1>1.What is bind()</h1>
+
+     <p>bind() is a JavaScript method that creates a new function and permanently binds the this value to a specific object </p>
+
+     <p>.. it does not call the function immediately <br>..It returns a new function </p>
+
+     <!-- <script>
+        function showName() {
+            console.log(this.name);
+        }
+        let user = {name:"rahul"};
+
+        let boundFunction = showName.bind(user);
+
+        boundFunction();
+     </script> -->
+
+     <!-- <h2>Simple Example </h2>
+     <script>
+        function showName() {
+            console.log(this.name);
+
+        }
+        let user = {name: "rahul"};
+
+        let boundFunction = showName.bind(user);
+
+        boundFunction();
+     </script>
+
+     <h3>2. bind() with Arguments</h3>
+     <script>
+        function greet (city) {
+            console.log(this.name + "from" + city)
+        }
+        let  person = {name: "Amit"};
+        let greetAmit = greet.bind (person, "Delhi");
+
+          greetAmit ();
+     </script> -->
+
+     <h3> 3. bind() in button Click </h3>
+     <button id="btn">Click</button>
+
+     <script>
+        let user = {
+            name: " Rahul chauhan"
+        };
+
+        function show () {
+            alert (this.name);
+
+        }
+
+         document.getElementById("btn")
+         .addEventListener("click", show.bind(user));
+
+     </script>
+
+
+    
+
+</body>
+</html>

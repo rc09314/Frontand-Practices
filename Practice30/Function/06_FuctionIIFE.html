@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h2>IIFE</h2> 
+   <p>IIFE stand for Immediatly Invoked Fuction Expression</p>
+   <p>..It  is a fuction that runs immediately after it  is  created</p>
+    <script>
+        (function () {
+            console.log("iife");
+        }) ();
+
+        // this is runs immediately without calling it separately
+
+    </script>
+
+    <h2>2.IIFE with Parameters</h2>
+
+    <script>
+        (function(name) {
+            console.log("Hello" + name);
+        } )("Rahul")
+    </script>
+
+    <h3>3.Arrow Fuction IIFE </h3>
+
+    <script>
+        (() => {
+            console.log("Arrow IIFE");
+        }) ();
+    </script>
+
+    <h3>Basic Exaple </h3>
+        
+    <script>
+        (function (){
+            console.log("IIFE")
+        }) ();
+    </script>
+
+    <h4>Why Use IIfe</h4>
+          <script>
+            (function () {
+                let secret = "hidden";
+                console.log(secret);
+            })();
+          </script>
+</body>
+</html
